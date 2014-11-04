@@ -11,31 +11,28 @@
 			<h1>Hotel-O-City</h1>
 		</header>
 		<section class="main">
-			<h2>A Heading That You Can Change</h2>
-			<p>Some information about the form, the page, and/or the site.</p>
+			<h2>Tickets Finder</h2>
+			<p>Enter the departure city, destination city, departure date, return date, number of adults and Max. price per person then click the "Submit" button to find the tickets.</p>
 			<form name="travelForm" id="travelForm" action="#" method="post" enctype="application/x-www-form-urlencoded">
 				
 				<div class="formBox">
 					<label for="departure">Departure City</label>
-					<input type="text" name="departure" id="departure" placeholder="departure city" />
-				</div>
-				<div class="formBox">
+					<input type="text" name="departure" id="departure" placeholder="departure city" required/>
+				</div><div class="formBox">
 					<label for="destination">Destination City</label>
-					<input type="text" name="destination" id="destination" placeholder="destination city" />
+					<input type="text" name="destination" id="destination" placeholder="destination city" required/>
 				</div>
-				
-				<div class="formBox">
+                <div class="formBox">
 					<label for="departure_dt">Departure Date</label>
-					<input type="date" name="departure_dt" id="departure_dt" placeholder="" />
-				</div>
-				<div class="formBox">
+					<input type="date" name="departure_dt" id="departure_dt" placeholder="" required/>
+				</div><div class="formBox">
 					<label for="return_dt">Return Date</label>
-					<input type="date" name="return_dt" id="return_dt" placeholder="" />
+					<input type="date" name="return_dt" id="return_dt" placeholder="" required/>
 				</div>
 				
 				<div class="col">
 					<label for="num_adults">Number of Adults</label>
-					<input type="number" name="num_adults" id="num_adults" min="1" max="10" step="1" />
+					<input type="number" name="num_adults" id="num_adults" min="1" max="10" step="1" required/>
 					<!-- OR 
 					<select name="num_adults" id="num_adults">
 						<option value="1">1</option>
@@ -50,12 +47,10 @@
 						<option value="10">10</option>
 					</select>
 					-->
-				</div>
-				<div class="col">
+				</div><div class="col">
 					<label for="price" title="Max. price per person">Max. Price</label>
 					<input type="range" name="price" id="price" min="100" max="2000" value="1000"/>
 				</div>
-				
 				<div class="col buttons">
 					<input type="reset" name="btnReset" id="btnReset" value="Reset" />
 					<input type="submit" name="btnSubmit" id="btnSubmit" value="Submit" />
