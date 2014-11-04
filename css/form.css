@@ -1,0 +1,246 @@
+
+/*******************************************
+				Defaults
+
+Remember to use something like type-scale.com 
+to get your font sizes
+*******************************************/
+*{
+	padding:0;
+	margin: 0;
+}
+html,body{
+
+}
+h1{
+	padding:0.2rem 0.2rem;
+}
+h2{
+
+}
+p{
+
+}
+
+/*******************************************
+				Layout
+*******************************************/
+.wrapper{
+	
+}
+.masthead{
+	
+}
+.main{
+	
+}
+.foot{
+		background: #666;
+    clear: both;
+	color:#fff;
+	padding-top: 20px;
+	border-top: 6px solid #333;
+}
+
+label[for=departure], label[for=destination] {
+  display: inline-block;
+  line-height: 20px;
+  padding-left: 20px;
+  background: url("../img/anchor.png") no-repeat scroll 0 0 transparent;
+}
+
+label[for=departure_dt], label[for=return_dt] {
+  display: inline-block;
+  line-height: 20px;
+  padding-left: 20px;
+  background: url("../img/calendar.png") no-repeat scroll 0 0 transparent;
+}
+label[for=num_adults] {
+  display: inline-block;
+  line-height: 20px;
+  padding-left: 20px;
+  background: url("../img/group.png") no-repeat scroll 0 0 transparent;
+}
+label[for=price] {
+  display: inline-block;
+  line-height: 20px;
+  padding-left: 20px;
+  background: url("../img/money.png") no-repeat scroll 0 0 transparent;
+}
+/*******************************************
+				Form Styles
+*******************************************/
+@media screen and (max-width: 500px) {
+
+.formBox{
+	margin: 1.0rem 0;	
+}
+
+.buttons{
+	width: 50%;
+	padding:0 0 0 3rem;
+}
+label{
+	display:block;
+	width: 15rem;
+	text-align:left;
+	margin: 0 0 0 3rem;
+	font-size: 1.2rem;
+	padding: 0.6rem 0 0.3rem 0; /* more space on the top than the bottom */
+	color: #666;
+}
+input[type=text],
+input[type=number],
+input[type=date]{
+    display:block;
+    width:15rem;
+	text-align:left;	
+	font-size: 1.2rem;
+	padding: 0.5rem 0.5rem;
+	margin: 0 0 0 3rem;
+	color: #333;
+}
+input[type=range]{
+	display:block;
+	width: 15rem;
+	text-align:left;
+	margin: 0 0 0 3rem;
+	font-size: 1.2rem;
+	padding: 0.6rem 0 0.3rem 0; /* more space on the top than the bottom */
+	color: #666;
+}
+input[type=submit],
+input[type=reset]{
+    float: left;
+	width: 50%;
+	padding:3rem 0 0 15rem;
+}
+    
+}
+
+@media screen and (min-width: 501px) and (max-width:780px) {
+    .formBox{
+	margin: 1.0rem 0;	
+        clear: both;
+        float: left;
+}
+
+    .col{
+        clear: both;
+        float: left;
+    }
+.buttons{
+    clear: both;
+	width: 50%;
+	padding:0 0 0 3rem;
+}
+label{
+   /* clear: both;*/
+    float:left;
+	width: 8rem;
+	text-align:right;
+/*	margin: 0px 1.5rem 0px 0px;*/
+    margin: 1px 0px 0px 0px;
+	font-size: 1.2rem;
+	padding:0.5rem 0rem 1.0rem 0.2rem;
+	color: #666;
+}
+input[type=text],
+input[type=number],
+input[type=date]{
+    float: left;
+    width:15rem;
+	text-align:left;	
+	font-size: 1.2rem;
+	padding:0.5rem 0.5rem;
+	margin: 0 0 0 1.5rem;
+	color: #333;
+}
+input[type=range]{
+	float: left;
+	width: 15rem;
+	text-align:left;
+	margin: 0 0 0 3rem;
+	font-size: 1.2rem;
+	padding: 0.6rem 0 0.3rem 0; /* more space on the top than the bottom */
+	color: #666;
+}
+input[type=submit],
+input[type=reset]{
+	width: 100%;
+	padding:0 0 0 15rem;
+}
+}
+
+@media screen and (min-width: 781px){
+.formBox{
+	margin: 1.0rem 0;	
+}
+.formBox:nth-child(odd){
+    clear:both;
+}
+.formBox:nth-child(even){
+/*    float:left;*/
+    margin: 0 0;
+}
+.col{
+    float: left;
+}
+.col:nth-child(odd){
+    clear: both;
+}
+/*
+.formBox:nth-child(2){
+    float: left;
+}
+*/
+
+.buttons{
+    clear: both;
+	width: 50%;
+	padding:0 0 0 3rem;
+    
+}
+    
+
+label{
+	width: 3rem;
+	text-align:right;
+	float:left;
+	margin: 1px 0px 0px 0px;
+	font-size: 1.2rem;
+	padding:0.2rem 0.2rem 0.5rem 0.5rem;
+	color: #666;
+}
+input[type=text],
+input[type=number],
+input[type=date]{
+    float: left;
+	text-align:left;	
+    width:12rem;
+	font-size: 1.2rem;
+	padding:0.5rem 0.5rem;
+	margin: 0 0 0 3rem;
+	color: #333;
+}
+input[type=range]{
+	float: left;
+	width: 13rem;
+	text-align:left;
+	margin: 0 0 0 3rem;
+	font-size: 1.2rem;
+	padding: 0.6rem 0 0.3rem 0; /* more space on the top than the bottom */
+	color: #666;
+}
+input[type=submit],
+input[type=reset]{
+    
+	width: 30%;
+	padding:0 0 0 15rem;
+}
+
+}
+/*******************************************
+				Image Styles
+*******************************************/
+
